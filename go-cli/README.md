@@ -67,11 +67,25 @@ cobra-cli init
 
 ## Build
 
+바이너리 빌드
+
 ```shell
 # building the program for intel macs
 GOOS=darwin GOARCH=amd64 go build -o <application-name> main.go 
 # building the program for M1 macs
-GOOS=darwin GOARCH=arm64 go build -o <application-name> cmd/gurl/main.go 
+GOOS=darwin GOARCH=arm64 go build -o <application-name> main.go 
 # building the program for 64 bits amd/intel linux
-GOOS=linux GOARCH=amd64 go build -o <application-name> cmd/gurl/main.go
+GOOS=linux GOARCH=amd64 go build -o <application-name> main.go
+```
+
+바이너리 압축
+
+```shell
+tar -xzvf <application-name>.<GOOS-GOARCH>.tar.gz <application-name.exec>
+```
+
+압축 풀기
+
+```shell
+sudo tar -C /usr/local/bin -xzvf <application-name>.<GOOS-GOARCH>.tar.gz
 ```
