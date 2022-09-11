@@ -1,5 +1,5 @@
 /*
-Copyright © 2022 NAME HERE <EMAIL ADDRESS>
+Copyright © 2022 github.com/nopecho ch.jooon@gmail.com
 */
 package cmd
 
