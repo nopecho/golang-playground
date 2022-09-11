@@ -58,3 +58,9 @@ cobra 프로젝트 생성
 ```shell
 cobra-cli init
 ```
+
+## Download
+
+```shell
+/usr/local/bin/<build-application>
+```
