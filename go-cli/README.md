@@ -64,3 +64,14 @@ cobra-cli init
 ```shell
 /usr/local/bin/<build-application>
 ```
+
+## Build
+
+```shell
+# building the program for intel macs
+GOOS=darwin GOARCH=amd64 go build -o <application-name> main.go 
+# building the program for M1 macs
+GOOS=darwin GOARCH=arm64 go build -o <application-name> cmd/gurl/main.go 
+# building the program for 64 bits amd/intel linux
+GOOS=linux GOARCH=amd64 go build -o <application-name> cmd/gurl/main.go
+```
